@@ -1,0 +1,28 @@
+<h3>Nueva serie</h3>
+
+<form [formGroup]="form" (ngSubmit)="submit()" style="display:grid; gap:10px; max-width:420px;">
+  <label>
+    Title
+    <input type="text" formControlName="title" />
+  </label>
+
+  <label>
+    Channel
+    <input type="text" formControlName="channel" />
+  </label>
+
+  <label>
+    Rating (0-10)
+    <input type="number" formControlName="rating" />
+  </label>
+
+  <button type="submit" [disabled]="form.invalid">
+    Crear
+  </button>
+</form>
+
+@if (successId) {
+  <p style="margin-top:12px; color:green;">
+    ✅ Serie creada. ID devuelto: {{ successId }}
+  </p>
+}

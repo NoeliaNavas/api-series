@@ -1,0 +1,29 @@
+h3 {
+  color: #e50914;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #181818; 
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+th {
+  background-color: #e50914;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #333;
+  color: #e5e5e5; 
+}
+
+tr:hover {
+  background-color: #222;
+}
+

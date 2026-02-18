@@ -1,0 +1,27 @@
+<h3>Listado de series</h3>
+
+@if (loading) {
+  <p>Cargando...</p>
+} @else if (errorMsg) {
+  <p style="color:red;">{{ errorMsg }}</p>
+} @else {
+  <table border="1" cellpadding="8" style="border-collapse:collapse; width:100%;">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Channel</th>
+        <th>Rating</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      @for (s of series; track s.id) {
+        <tr>
+          <td>{{ s.title }}</td>
+          <td>{{ s.channel }}</td>
+          <td>{{ s.rating }}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+}
