@@ -3,9 +3,9 @@
 @if (loading) {
   <p>Cargando...</p>
 } @else if (errorMsg) {
-  <p style="color:red;">{{ errorMsg }}</p>
+  <p>{{ errorMsg }}</p>
 } @else {
-  <table border="1" cellpadding="8" style="border-collapse:collapse; width:100%;">
+  <table>
     <thead>
       <tr>
         <th>Title</th>

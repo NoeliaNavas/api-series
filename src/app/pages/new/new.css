@@ -1,5 +1,6 @@
 h3 {
   color: #e50914;
+  margin-bottom: 20px;
 }
 
 form {
@@ -7,27 +8,25 @@ form {
   padding: 25px;
   border-radius: 6px;
   box-shadow: 0 0 15px rgba(0,0,0,0.6);
-  color: #e5e5e5;
+  display: grid;
+  gap: 15px;
+  max-width: 450px;
 }
 
 label {
+  display: flex;
+  flex-direction: column;
   font-weight: 500;
   color: #e5e5e5;
 }
 
 input {
-  width: 100%;
+  margin-top: 6px;
   padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 15px;
   background-color: #2a2a2a;
   border: 1px solid #333;
-  color: white; 
+  color: white;
   border-radius: 4px;
-}
-
-input::placeholder {
-  color: #888;
 }
 
 input:focus {
@@ -54,3 +53,8 @@ button:disabled {
   cursor: not-allowed;
 }
 
+.success {
+  margin-top: 15px;
+  color: #4caf50;
+  font-weight: bold;
+}
